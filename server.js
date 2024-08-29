@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the dist directory
-app.use(express.static(__dirname + '/dist/guide-medical'));
+app.use(express.static(__dirname + '/dist/guide-medical/browser'));
 
 // Route all requests to index.html
 app.get('/*', function(req, res) {
