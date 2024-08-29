@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/dist/guide-medical'));
 
 // Route all requests to index.html
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/guide-medical/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/guide-medical/browser/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
