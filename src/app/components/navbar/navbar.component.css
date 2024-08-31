@@ -27,8 +27,16 @@ body {
   height: 62px;
 }
 
-.navbar .menu-items {
+/* .navbar .menu-items {
   display: flex;
+} */
+
+.menu-items {
+  display: none;
+}
+
+.menu-items.active {
+  display: block;
 }
 
 .navbar .nav-container li {
