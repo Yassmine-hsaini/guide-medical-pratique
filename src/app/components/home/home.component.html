@@ -1,42 +1,35 @@
 <app-navbar></app-navbar>
-<div class="container-search">
-
-    <div class="row height d-flex ">
-
-      <div class="col-md-8">
-
+<div class="all">
+    <div class="home">
         <div class="search">
-          <i class="fa fa-search"></i>
-          <input type="text" class="form-control" placeholder="Have a question? Ask Now">
-          <button class="btn btn-primary">Search</button>
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control" placeholder="vous cherchez ...">
+            <button class="btn btn-primary">Chercher</button>
         </div>
-        
-      </div>
-      
-    </div>
-</div>
-<div class="gallery">
-    <section class="bg-light py-4 my-5">
-        <div class="container">
-            <div class="row">
+        <div class="gallery">
+            <section class="bg py-4 my-5">
+                <div class="container">
+                    <div class="row">
+                        
+                        @for (geste of gestes; track geste.title) {
+                            <div class="col-md-6 col-lg-4" >
+                                <div class="card my-3">
                 
-                @for (geste of gestes; track geste.title) {
-                    <div class="col-md-6 col-lg-4" >
-                        <div class="card my-3">
-        
-                            <img src="{{geste.img}}" class="card-img-top" alt="{{geste.title}}">
-        
-                            <div class="card-body">
-                                <h3 class="card-title"><a href="#" class="text-secondary">{{geste.title}}</a></h3>
-                                <!-- <p class="card-text">HTML stands for Hyper Text Markup Language, It helps to learn web development and designing. </p> -->
-                                <a routerLink="/{{geste.componentName}}" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary">Voir plus</a>
+                                    <img src="{{geste.img}}" class="card-img-top" alt="{{geste.title}}">
+                
+                                    <div class="card-body">
+                                        <h3 class="card-title"><a href="#" class="text-secondary">{{geste.title}}</a></h3>
+                                        <!-- <p class="card-text">HTML stands for Hyper Text Markup Language, It helps to learn web development and designing. </p> -->
+                                        <a routerLink="/{{geste.componentName}}" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary">Voir plus</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        } @empty {
+                            <li>There are no items.</li>
+                        }
                     </div>
-                } @empty {
-                    <li>There are no items.</li>
-                }
-            </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 </div>

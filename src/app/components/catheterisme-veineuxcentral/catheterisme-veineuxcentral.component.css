@@ -29,9 +29,10 @@
     line-height: 1.6;
     margin: 20px;
     padding: 20px;
-    background-color: #f7f7f7;
-    color: #333;
+    /* background-color: #f7f7f7; */
+    color: #e2e3e4;
     overflow: hidden;
+    background-color: #27374D !important;
 }
 
 h1 {
@@ -76,7 +77,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background-color: #ecf0f1;
+    /* background-color: #ecf0f1; */
 }
 
 table td {
@@ -85,9 +86,9 @@ table td {
     vertical-align: top;
 }
 
-table tr:nth-child(even) {
+/* table tr:nth-child(even) {
     background-color: #dfe6e9;
-}
+} */
 
 img {
     max-width: 100%;

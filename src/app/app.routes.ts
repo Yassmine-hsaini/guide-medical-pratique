@@ -21,29 +21,31 @@ import { SondageVesicalComponent } from './components/sondage-vesical/sondage-ve
 import { SuturesCutaneesComponent } from './components/sutures-cutanees/sutures-cutanees.component';
 import { VentilationNoninvasiveComponent } from './components/ventilation-noninvasive/ventilation-noninvasive.component';
 import { PonctionSuspubienneComponent } from './components/ponction-suspubienne/ponction-suspubienne.component';
+import { Page0Component } from './components/page0/page0.component';
 
 export const routes: Routes = [
+    // {path: '', component: Page0Component},
     {path: '', component: HomeComponent},
-        {path: 'menu', component: MenuComponent},
-        {path: 'navbar', component: NavbarComponent},
-        {path: 'lavage-des-mains', component: LavageMaisComponent},
-        {path: 'port-des-gants', component: PortGantsComponent},
-        {path: 'catheterisme-arteriel', component: CatheterismeArterielComponent},
-        {path: 'catheterisme-intra-osseux', component: CatheterismeIntraosseuxComponent},
-        {path: 'catheterisme-veineux-peripherique', component: CatheterismeVeineuxPeripheriqueComponent},
-        {path: 'catheterisme-veineux-central', component: CatheterismeVeineuxcentralComponent},
-        {path: 'drainage-thoracique', component: DrainageThoraciqueComponent},
-        {path: 'intubation-endo-tracheale', component: IntubationEndoTrachealeComponent},
-        {path: 'oxygenotherapie', component: OxygenotherapieComponent},
-        {path: 'ponction-dascite', component: PonctionDasciteComponent},
-        {path: 'ponction-lombaire', component: PonctionLombaireComponent},
-        {path: 'ponction-pleurale', component: PonctionPleuraleComponent},
-        {path: 'ponction-sus-pubienne', component: PonctionSuspubienneComponent},
-        {path: 'prelevement-arteriel-gasometrie', component: PrelevementArterielGasometrieComponent},
-        {path: 'protocole-ecrit', component: ProtocoleEcritComponent},
-        {path: 'sondage-nasogastrique', component: SondageNasogastriqueComponent},
-        {path: 'sondage-vesical', component: SondageVesicalComponent},
-        {path: 'sutures-cutanees', component: SuturesCutaneesComponent},
-        {path: 'ventilation-non-invasive', component: VentilationNoninvasiveComponent},
-    
+    {path: 'menu', component: MenuComponent},
+    {path: 'navbar', component: NavbarComponent},
+    {path: 'lavage-des-mains', component: LavageMaisComponent},
+    {path: 'port-des-gants', component: PortGantsComponent},
+    {path: 'catheterisme-arteriel', component: CatheterismeArterielComponent},
+    {path: 'catheterisme-intra-osseux', component: CatheterismeIntraosseuxComponent},
+    {path: 'catheterisme-veineux-peripherique', component: CatheterismeVeineuxPeripheriqueComponent},
+    {path: 'catheterisme-veineux-central', component: CatheterismeVeineuxcentralComponent},
+    {path: 'drainage-thoracique', component: DrainageThoraciqueComponent},
+    {path: 'intubation-endo-tracheale', component: IntubationEndoTrachealeComponent},
+    {path: 'oxygenotherapie', component: OxygenotherapieComponent},
+    {path: 'ponction-dascite', component: PonctionDasciteComponent},
+    {path: 'ponction-lombaire', component: PonctionLombaireComponent},
+    {path: 'ponction-pleurale', component: PonctionPleuraleComponent},
+    {path: 'ponction-sus-pubienne', component: PonctionSuspubienneComponent},
+    {path: 'prelevement-arteriel-gasometrie', component: PrelevementArterielGasometrieComponent},
+    {path: 'protocole-ecrit', component: ProtocoleEcritComponent},
+    {path: 'sondage-nasogastrique', component: SondageNasogastriqueComponent},
+    {path: 'sondage-vesical', component: SondageVesicalComponent},
+    {path: 'sutures-cutanees', component: SuturesCutaneesComponent},
+    {path: 'ventilation-non-invasive', component: VentilationNoninvasiveComponent},
+
 ];

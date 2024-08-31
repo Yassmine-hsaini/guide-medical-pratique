@@ -1,58 +1,125 @@
+body, .all {
+    background-color: #27374D;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+.all {
+    padding: 10px;
+}
+
 .card-img-top {
     height: 150px;
-    /* min-height: 100px; */
-    overflow: hidden;
+    object-fit: cover;
 }
 
 .card-title a:link {
-    font-size: 30px;
-    background-color: transparent;
-    color: #000000;
+    font-size: 24px;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 .card-title a:hover {
-    color: red;
-    background-color: transparent;
+    color: #FF6347;
     text-decoration: underline;
 }
 
 .btn {
     background-color: #A02334;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* ---------------- Search bar ---------------- */
-.search{
-    position: relative;
+.btn:hover {
+    background-color: #FF6347;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    margin: 10px auto !important;
+    max-width: 600px;
 }
 
-.search input{
-    height: 40px;   
+.search input {
+    height: 40px;
     text-indent: 15px;
     border: 2px solid #d6d4d4;
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
 }
 
-.search input:focus{
+.search input:focus {
     box-shadow: none;
     border: 2px solid #A02334;
 }
 
-.search .fa-search{
+.search .fa-search {
     position: absolute;
-    top: 20px;
+    top: 12px;
     left: 16px;
+    color: #A02334;
 }
 
-.search button{
-    position: absolute;
-    top: 2px;
-    right: 5px;
-    height: 35px;
+.search button {
+    height: 40px;
     width: 110px;
     background: #A02334;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0 5px 5px 0;
 }
 
-.container-search {
-    margin: 20px 10px;
+.gallery .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #33415C;
+    border: none;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .card-title a:link {
+        font-size: 20px;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .search {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .search button {
+        width: 100%;
+        border-radius: 5px;
+    }
 }
