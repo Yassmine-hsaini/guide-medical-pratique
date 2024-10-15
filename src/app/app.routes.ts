@@ -22,6 +22,10 @@ import { SuturesCutaneesComponent } from './components/sutures-cutanees/sutures-
 import { VentilationNoninvasiveComponent } from './components/ventilation-noninvasive/ventilation-noninvasive.component';
 import { PonctionSuspubienneComponent } from './components/ponction-suspubienne/ponction-suspubienne.component';
 import { Page0Component } from './components/page0/page0.component';
+import { RemerciementComponent } from './components/remerciement/remerciement.component';
+import { MentionLegaleComponent } from './components/mention-legale/mention-legale.component';
+import { AProposComponent } from './components/a-propos/a-propos.component';
+import { SimulationComponent } from './components/simulation/simulation.component';
 
 export const routes: Routes = [
     // {path: '', component: Page0Component},
@@ -47,5 +51,9 @@ export const routes: Routes = [
     {path: 'sondage-vesical', component: SondageVesicalComponent},
     {path: 'sutures-cutanees', component: SuturesCutaneesComponent},
     {path: 'ventilation-non-invasive', component: VentilationNoninvasiveComponent},
+    {path: 'remerciement', component: RemerciementComponent},
+    {path: 'mention-legale', component: MentionLegaleComponent},
+    {path: 'a-propos', component: AProposComponent},
+    {path: 'simulation', component: SimulationComponent},
 
 ];
